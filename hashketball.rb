@@ -218,7 +218,6 @@ def winning_team
   away_score = 0
   winning_team = ""
   game_hash.each do |location, team_data|
-    #binding.pry
     if location == :home
       team_data[:players].each do |player_stats|
         player_stats.each do |specific_name, specific_stats|
